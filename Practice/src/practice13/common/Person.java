@@ -17,12 +17,16 @@ public class Person {
 
 	/** ユーザID */
 	public int userId;
+	
 	/** ユーザ名 */
 	public String userNm;
+	
 	/** メールアドレス */
 	public String mail;
+	
 	/** パスワード */
 	public String password;
+	
 	/**
 	 * ユーザIDを取得します
 	 * @return ユーザID
@@ -30,6 +34,8 @@ public class Person {
 	public int getUserId() {
 		return userId;
 	}
+	
+	
 	/**
 	 * ユーザIDを設定します
 	 * @param userId	設定したいユーザID
@@ -44,6 +50,7 @@ public class Person {
 	public String getUserNm() {
 		return userNm;
 	}
+	
 	/**
 	 * ユーザ名を設定します
 	 * @param userNm	設定したいユーザ名
@@ -51,6 +58,8 @@ public class Person {
 	public void setUserNm(String userNm) {
 		this.userNm = userNm;
 	}
+	
+	
 	/**
 	 * メールアドレスを取得します
 	 * @return メールアドレス
@@ -58,6 +67,8 @@ public class Person {
 	public String getMail() {
 		return mail;
 	}
+	
+	
 	/**
 	 * メールアドレスを設定します
 	 * @param mail	設定したいメールアドレス
@@ -65,6 +76,8 @@ public class Person {
 	public void setMail(String mail) {
 		this.mail = mail;
 	}
+	
+	
 	/**
 	 * パスワードを取得します
 	 * @return	パスワード
@@ -72,6 +85,8 @@ public class Person {
 	public String getPassword() {
 		return password;
 	}
+	
+	
 	/**
 	 * パスワードを設定します
 	 * @param password	設定したいパスワード

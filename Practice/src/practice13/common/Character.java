@@ -33,7 +33,7 @@ public class Character {
 	public Character(int hp, int power, int endurance) {
 		this.hp = hp;
 		this.power = power;
-		this.endurance = endurance;
+		this.setEndurance(endurance);
 	}
 
 	/**
@@ -67,7 +67,7 @@ public class Character {
 	 */
 	public boolean damage(int attack) {
 		// ダメージ計算
-		int calc = attack - this.endurance;
+		int calc = attack - this.getEndurance();
 		if (calc <= 0) {
 			// 必ず1ダメージは入るようにする
 			calc = 1;
@@ -75,6 +75,8 @@ public class Character {
 
 		// ダメージ分体力を減らす
 		this.hp -= calc;
+
+		System.out.println(this.showParameter());
 
 		// 体力がなくなったかどうかの判定
 		if (this.hp <= 0) {
@@ -98,8 +100,16 @@ public class Character {
 		str.append("\n");
 		str.append("　力　：" + this.power);
 		str.append("\n");
-		str.append("耐　久：" + this.endurance);
+		str.append("耐　久：" + this.getEndurance());
 
 		return str.toString();
+	}
+
+	public int getEndurance() {
+		return endurance;
+	}
+
+	public void setEndurance(int endurance) {
+		this.endurance = endurance;
 	}
 }
