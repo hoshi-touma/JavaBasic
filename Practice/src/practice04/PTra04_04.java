@@ -6,7 +6,7 @@ package practice04;
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 
-public class 
+public class PTra04_04
 
 {
 	public static void main(String[] args) {
