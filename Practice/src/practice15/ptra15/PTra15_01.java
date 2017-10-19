@@ -18,10 +18,19 @@ public class PTra15_01 {
 		DBCourse dbCourse = new DBCourse();
 
 		// ★ Course[	]の配列に jcourse と dbCourse のインスタンスを代入してください。
+		Course[] courseList=new Course[2];
 
-		for (Course course : courseList) {
+	courseList[0]=jCourse;
+	courseList[1]=dbCourse;
+
+
+	/*	for (Course course : courseList) {
 			System.out.println(course.getCourseName());
 		}
-	}
+	*/
+		for(int i=0; i<courseList.length; i++) {
+		System.out.println(courseList[i].getCourseName());
 
+		}
+	}	
 }
