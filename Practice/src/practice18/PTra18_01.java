@@ -20,14 +20,15 @@ public class PTra18_01 {
             while (scanner.hasNext()) {
                 String line = scanner.nextLine();
                 // ★ 1行ごとにArrayListに格納してください
-
-            }
+                array.add(line);
+            }    
         } catch (FileNotFoundException e) {
             System.out.println("ファイルが見つかりません");
         }
 
 		// ★ ArrayListに格納された値を全て表示してください
 		// ※ できれば拡張for文を使いましょう
-
+ //    for(int i1=0; i1<array.size(); i1++)System.out.println(array.get(i1));
+     for(String nam: array)System.out.println(nam);
 	}
 }
